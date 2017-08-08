@@ -1,0 +1,19 @@
+{
+  "Configuration": {
+    "ConfigurationRootPath": "Configurations",
+    "NLog": "NLog.config",
+    "Json": [
+      {
+        "Include": "*.config.json",
+        "Exclude": "",
+        "Optional": false,
+        "ReloadOnChange": true
+      }
+    ]
+  },
+  "Autofac": {
+    "modules": [
+      //{ "type": "Teleware.Foundation.Core.Startup, Teleware.Foundation.Core" }
+    ]
+  }
+}

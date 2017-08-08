@@ -1,0 +1,10 @@
+﻿{
+  "Database": {
+    "ConnectionStrings": {
+      "Default": {
+        "ProviderName": "Oracle.ManagedDataAccess.Client",
+       // "ConnectionString": "User Id=FJGBWLJG;Password=FJGBWLJG;Data Source=192.168.50.118/orcl"
+      }
+    }
+  }
+}

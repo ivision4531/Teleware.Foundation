@@ -1,0 +1,24 @@
+{
+  "Configuration": {
+    "ConfigurationRootPath": "App_Data/Configurations",
+    "NLog": "NLog.config",
+    "Json": [
+      {
+        "Include": "*.config.json",
+        "Exclude": "",
+        "Optional": false,
+        "ReloadOnChange": true
+      }
+    ]
+  },
+  "Autofac": {
+    "modules": [
+      { "type": "Teleware.Foundation.Core.Module, Teleware.Foundation.Core" },
+      { "type": "Teleware.Foundation.Configuration.Module, Teleware.Foundation.Configuration" },
+      //{ "type": "Teleware.Foundation.Caching.CacheProviders.Memory.Module, Teleware.Foundation.Caching.CacheProviders.Memory" },
+      { "type": "Teleware.Foundation.Data.EntityFramework.Module, Teleware.Foundation.Data.EntityFramework" },
+      { "type": "Teleware.Foundation.Data.EntityFramework.Oracle.Module, Teleware.Foundation.Data.EntityFramework.Oracle" },
+      { "type": "Teleware.Foundation.Diagnostics.Loggers.NLog.Module, Teleware.Foundation.Diagnostics.Loggers.NLog" },
+    ]
+  }
+}

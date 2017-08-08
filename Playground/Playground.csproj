@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net46</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Teleware.Foundation.Caching.CacheProviders.Memory\Teleware.Foundation.Caching.CacheProviders.Memory.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Configuration\Teleware.Foundation.Configuration.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Core\Teleware.Foundation.Core.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Data.EntityFramework.Oracle\Teleware.Foundation.Data.EntityFramework.Oracle.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Data.EntityFramework\Teleware.Foundation.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Data.Memory\Teleware.Foundation.Data.Memory.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Diagnostics.Loggers.NLog\Teleware.Foundation.Diagnostics.Loggers.NLog.csproj" />
+    <ProjectReference Include="..\src\Teleware.Foundation.Hosting.Application\Teleware.Foundation.Hosting.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="bootup.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Configurations\database.config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Configurations\NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
